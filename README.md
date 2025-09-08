@@ -16,6 +16,34 @@ A arquitetura segue princípios de **Clean Architecture** e **SOLID**, garantind
 
 ---
 
+## 🏗️ Arquitetura do projeto
+Este projeto segue os príncipios da **Clean Architecture**, organizado em camadas bem definidas:
+
+API-Produto/
+│
+├── Context/                     # Contexto do banco de dados (Entity Framework Core)
+│   └── AppDbContext.cs
+│
+├── Controllers/                 # Endpoints da API
+│   └── ProdutoController.cs
+│
+├── DTOs/                        # Objetos de transferência de dados
+│   └── ProdutoDTO.cs
+│
+├── Models/                      # Modelos/Entidades principais
+│   └── Produto.cs
+│
+├── Repositories/                # Padrão Repository para acesso a dados
+│   ├── IProdutoRepository.cs    # Interface do repositório
+│   └── ProdutoRepository.cs     # Implementação do repositório
+│
+├── Services/                    # Camada de serviços (regras de negócio)
+│   └── ProdutoService.cs
+│
+├── Program.cs                   # Configurações iniciais e startup da aplicação
+   
+---
+
 ## 🧩 Demonstração de SOLID Aplicado
 - **S - Single Responsibility Principle:** cada classe cumpre apenas uma função.  
 - **O - Open/Closed Principle:** o sistema é extensível sem alterar código existente.  
