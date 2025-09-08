@@ -18,7 +18,6 @@ A arquitetura segue princípios de **Clean Architecture** e **SOLID**, garantind
 
 ## 🏗️ Arquitetura do projeto
 Este projeto segue os príncipios da **Clean Architecture**, organizado em camadas bem definidas:
-
 API-Produto/
 │
 ├── Context/                     # Contexto do banco de dados (Entity Framework Core)
